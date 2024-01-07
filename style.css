@@ -1,0 +1,173 @@
+body{
+    inset: 0;
+    box-sizing: border-box;
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #E2C2C6;
+    flex-wrap: nowrap;
+    animation: colors 8s ease-in-out infinite;
+
+}
+.container{
+    inset: 0;
+   
+    width: 100vw;
+    height: 85vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+footer{
+    
+    display: flex;
+    color: white;
+    background: black;
+    justify-content: space-around;
+    align-items: center;
+}
+.center{
+
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+    height: 370px;
+    width: 300px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 50px;
+
+}
+#display{
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    font-family: 'DotGothic16', sans-serif;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 250px;
+    background-color: rgb(97, 218, 255);
+border: 2px solid black;
+border-radius: 12px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.number{
+display: grid;
+grid-template-rows:  1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas: "1 2 3"
+"4 5 6"
+"7 8 9"
+"0"
+"+ - * /"
+"c";
+}
+button{
+    
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+    color: white;
+    border: 1.5px solid black;
+    background-color: rgb(39, 39, 39);
+    margin: 3px;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+}
+button::before{
+    content:'' ;
+    
+    position:absolute ;
+    top: 0;
+    right:0 ;
+    width: 0;
+    height: 100%;
+    background: white;
+    color: black;
+    z-index: -1;
+    transition: 0.8s;
+}
+button:hover {
+    color: black;
+   border-radius: 50px;
+    transition: 1s;
+ }
+button:hover:before{
+ 
+    width: 100%;
+}
+
+button #b1{
+    grid-area: 1;
+   
+}
+button #b2{
+    grid-area: 2;
+}
+button #b3{
+    grid-area: 3;
+}
+button #b4{
+    grid-area: 4;
+}
+button #b5{
+    grid-area: 5;
+}
+button #b6{
+    grid-area: 6;
+}
+button #b7{
+    grid-area: 7;
+}
+button #b8{
+    grid-area: 8;
+}
+button #b9{
+    grid-area: 9;
+}
+button #b10{
+    grid-area: 10;
+}
+button #b11{
+    grid-area: 11;
+}
+button #b12{
+    grid-area: 12;
+}
+button #b13{
+    grid-area: 13;
+}
+button #b14{
+    grid-area: 14;
+}
+button #clear{
+    grid-area: c;
+}
+@media (max-width: 500px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        border-radius: 200px;
+    }
+}
+@keyframes colors {
+    0%{
+background-color: #8ecae6;
+    }
+    25%{
+background-color: #219ebc;
+    }
+    50%{
+background-color: #E2C2C6;
+    }
+    75%{
+background-color: #ffb703;
+    }
+    100%{
+      background-color: #fb8500;  
+    }
+}

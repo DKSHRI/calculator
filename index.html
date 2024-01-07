@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="fav.jpg" type="image/x-icon">
+    <title>calculator</title>
+</head>
+<body>
+  
+<div class="container">
+    
+    <div class="center">
+        <div class="display">
+         <input type="text" id="display" readonly>
+        </div>
+        <div class="number">
+            <button id="b1" onclick="
+                curretdisplay=curretdisplay+'1';
+document.querySelector('#display').value=curretdisplay;">1</button>
+            <button id="b2" onclick="
+            curretdisplay=curretdisplay+'2';
+document.querySelector('#display').value=curretdisplay;">2</button>
+            <button id="b3"onclick="
+            curretdisplay=curretdisplay+'3';
+document.querySelector('#display').value=curretdisplay;">3 </button>
+            <button id="b4"onclick="
+            curretdisplay=curretdisplay+'4';
+document.querySelector('#display').value=curretdisplay;"> 4</button>
+            <button id="b5"onclick="
+            curretdisplay=curretdisplay+'5';
+document.querySelector('#display').value=curretdisplay;"> 5</button>
+            <button id="b6"onclick="
+            curretdisplay=curretdisplay+'6';
+document.querySelector('#display').value=curretdisplay;">6 </button>
+            <button id="b7"onclick="
+            curretdisplay=curretdisplay+'7';
+document.querySelector('#display').value=curretdisplay;"> 7</button>
+            <button id="b8"onclick="
+            curretdisplay=curretdisplay+'8';
+document.querySelector('#display').value=curretdisplay;">8 </button>
+            <button id="b9" onclick="
+            curretdisplay=curretdisplay+'9';
+document.querySelector('#display').value=curretdisplay;">9 </button>
+            <button id="b0" onclick="
+            curretdisplay=curretdisplay+'0';
+document.querySelector('#display').value=curretdisplay;">0 </button>
+            <button id="b11"onclick="
+            curretdisplay=curretdisplay+'+';
+document.querySelector('#display').value=curretdisplay;"> +</button>
+            <button id="b12"onclick="
+            curretdisplay=curretdisplay+'-';
+document.querySelector('#display').value=curretdisplay;">- </button>
+            <button id="b13"onclick="
+            curretdisplay=curretdisplay+'*';
+document.querySelector('#display').value=curretdisplay;"> *</button>
+            <button id="b14"onclick="
+            curretdisplay=curretdisplay+'/';
+document.querySelector('#display').value=curretdisplay;"> /</button>
+            <button id="clear"onclick="
+            curretdisplay='';
+document.querySelector('#display').value=curretdisplay;">C </button>
+ <button id="equal"onclick="
+ let result= eval(curretdisplay);
+ curretdisplay=result 
+document.querySelector('#display').value=curretdisplay;">= </button>
+        </div>
+    </div>
+</div>
+
+</div>
+<footer>
+    <div><p>made by ❤️🐼devanshu™️  </p></div>
+    <div><p>devanshu.shrivastavaa@gmail.com</p></div>
+</footer>
+
+
+
+
+
+
+
+
+
+    <script src="js.js"></script>
+</body>
+</html>
